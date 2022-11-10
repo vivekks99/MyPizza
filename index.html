@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>MyPizza</title>
+</head>
+
+<body>
+    <script>
+        function sideMenu(){
+            document.getElementById('menu-sidebar').style.display = 'block';
+            document.getElementById('menu').style.display = 'none';
+        }
+        function crossBtn(){
+            document.getElementById('menu-sidebar').style.display = 'none';
+            document.getElementById('menu').style.display = 'block';
+        }
+    </script>
+
+    <div class="main-container">
+        <nav>
+            <div class="logo">
+                <strong>MyPizza</strong>
+            </div>
+            <div class="menu" id="menu" onclick="sideMenu()">
+                <!-- Menu -->
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <div class="ad-container">
+            <h1>GREATEST PIZZA EVER</h1>
+            <h2>READY IN 60 SECONDS</h2>
+            <div class="main-btn"><a href="">PLACE ORDER</a></div>
+        </div>
+
+        <div class="menu-sidebar" id="menu-sidebar">
+            <i class="fas fa-times" onclick="crossBtn()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">PIZZA</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACTS</a></li>
+                <li><a href="">LINKS</a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="pizza-cards">
+        <div class="container-card">
+            <div class="heading">
+                <h1>Choose Your Favorite</h1>
+            </div>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://github.com/briancodex/react-restaurant-website-v1/blob/main/src/images/product-1.jpg?raw=true"
+                        alt="" class="pic">
+                    <h2>Supreme Pizza</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste pariatur repellat aspernatur
+                        molestiae? Quia?</p>
+                    <h2>$19.99</h2>
+                    <a href="">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://github.com/briancodex/react-restaurant-website-v1/blob/main/src/images/product-2.jpg?raw=true"
+                        alt="" class="pic">
+                    <h2>Hawaiian Pizza</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste pariatur repellat aspernatur
+                        molestiae? Quia?</p>
+                    <h2>$16.99</h2>
+                    <a href="">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://github.com/briancodex/react-restaurant-website-v1/blob/main/src/images/product-3.jpg?raw=true"
+                        alt="" class="pic">
+                    <h2>Veggie Overload</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste pariatur repellat aspernatur
+                        molestiae? Quia?</p>
+                    <h2>$14.99</h2>
+                    <a href="">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pizza-of-the-day">
+        <div class="container">
+            <h1>Pizza of the Day</h1>
+            <h3>Truffle alfredo sauce topped with 24 carat gold dust.</h3>
+            <a href="">Order Now</a>
+        </div>
+    </div>
+
+    <div class="sweet-cards">
+        <div class="container-card">
+            <div class="heading">
+                <h1>Sweet Treats for You</h1>
+            </div>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://github.com/briancodex/react-restaurant-website-v1/blob/main/src/images/sweet-2.jpg?raw=true"
+                        alt="" class="pic">
+                    <h2>Doughlicious</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste pariatur repellat aspernatur
+                        molestiae? Quia?</p>
+                    <h2>$9.99</h2>
+                    <a href="">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://github.com/briancodex/react-restaurant-website-v1/blob/main/src/images/sweet-3.jpg?raw=true"
+                        alt="" class="pic">
+                    <h2>Caramel Wonder</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste pariatur repellat aspernatur
+                        molestiae? Quia?</p>
+                    <h2>$12.99</h2>
+                    <a href="">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://github.com/briancodex/react-restaurant-website-v1/blob/main/src/images/sweet3.jpg?raw=true"
+                        alt="" class="pic">
+                    <h2>Brownie Bunch</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste pariatur repellat aspernatur
+                        molestiae? Quia?</p>
+                    <h2>$10.99</h2>
+                    <a href="">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-container">
+        <div class="col">
+            <ul>
+                <li><h4>COMPANY</h4></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Investor</a></li>
+                <li><a href="">FeedBack</a></li>
+                <li><a href="">Ads</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li><h4>ABOUT</h4></li>
+                <li><a href="">Gift card</a></li>
+                <li><a href="">Card Balance Enquiry</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li><h4>LEGAL</h4></li>
+                <li><a href="">Disclaimer</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">
+            <p>All Rights Reserved. Copyright © MyPizza</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.pinterest.com/" target="_"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.youtube.com/" target="_"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,333 @@
+*{margin: 0;padding: 0;box-sizing: border-box;color: white;}
+body{
+    background-color: black;
+}
+.main-container{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('https://github.com/briancodex/react-restaurant-website-v1/blob/main/src/images/pizza-3.jpg?raw=true');
+    background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 1.3rem;
+}
+nav .menu{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+nav .menu i:hover{
+    color: yellow;
+}
+.ad-container{
+    padding: 18%;
+}
+.ad-container a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 10px;
+    background-color: red;
+}
+.ad-container a:hover{
+    background-color: rgb(185, 10, 10);
+    transition: 0.4s;
+}
+.ad-container h2{
+    margin-top: 10px;
+}
+.main-btn{
+    position: relative;
+    margin-top: 30px;
+}
+
+/* ******************************************** Pizza & Sweets Cards **************************************** */
+
+.container-card{
+    margin: 5%;
+}
+.container-card .heading{
+    text-align: center;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.product-card{
+    width: 350px;
+    height: 100%;
+    margin: 20px;
+}
+.pic{
+    width: 100%;
+    height: 300px;
+    box-shadow: 10px 10px #d6d660;
+}
+.product-card h2{
+    margin: 20px;
+}
+.product-card p{
+    margin: 15px;
+}
+.product-card a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: red;
+}
+.product-card a:hover{
+    background-color: rgb(185, 10, 10);
+    transition: 0.4s;
+}
+
+/* ******************************************** Pizza of the day **************************************** */
+
+.pizza-of-the-day{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('https://github.com/briancodex/react-restaurant-website-v1/blob/main/src/images/featured3.jpg?raw=true');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20% 25%;
+}
+.pizza-of-the-day .container{
+    font-size: 1.5rem;
+}
+.pizza-of-the-day .container h1{
+    margin-bottom: 10px;
+}
+.pizza-of-the-day .container h3{
+    margin-bottom: 35px;
+}
+.pizza-of-the-day .container a{
+    padding: 10px;
+    background-color: #dadc3e;
+    color: black;
+    text-decoration: none;
+}
+.pizza-of-the-day .container a:hover{
+    background-color: yellow;
+    transition: 0.4s;
+}
+
+/* ******************************************** Column of links **************************************** */
+
+.col-container{
+    padding: 5% 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col{
+    margin: 20px;
+}
+.col ul{
+    list-style-type: none;
+}
+.col ul h4{
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+    color: gray;
+}
+.col ul li{
+    margin-bottom: 20px;
+}
+.col ul li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(255, 218, 218);
+}
+.col ul li a:hover{
+    color: white;
+    text-decoration: underline;
+    transition: 0.6s;
+}
+
+/* ******************************************** Footer **************************************** */
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 0 30px 30px 20px;
+}
+.footer a{
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+.footer a .fa-facebook:hover{
+    color: #3b5998;
+    transition: 0.5s;
+}
+.footer a .fa-instagram-square:hover{
+    color: #8a3ab9;
+    transition: 0.5s;
+}
+.footer a .fa-pinterest:hover{
+    color: #E60023;
+    transition: 0.5s;
+}
+.footer a .fa-youtube:hover{
+    color: #FF0000;
+    transition: 0.5s;
+}
+
+/* ******************************************** Media queries **************************************** */
+
+@media only screen and (max-width:475px) {
+    .main-container{
+        font-size: 0.8rem;
+    }
+    .pizza-of-the-day .container{
+        font-size: 1rem;
+    }
+    .pic{
+        height: 100%;
+    }
+    .col ul h4{
+        margin-bottom: 10px;
+    }
+    .col ul li{
+        margin-bottom: 5px;
+    }
+    .col-container{
+        padding: 5% 0;
+    }
+    .footer{
+        font-size: 1rem;
+    }
+    .footer .social-links{
+        margin: 10px;
+    }
+}
+
+/* ******************************************** Menu Sidebar **************************************** */
+
+/* #menu-sidebar{
+    display: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: black;
+    height: 100vh;
+    padding: 10% 7%;
+    opacity: 0.8;
+}
+#menu-sidebar i{
+    font-size: 1.5rem;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+#menu-sidebar ul{
+    list-style-type: none;
+}
+#menu-sidebar li{
+    margin: 2rem;
+}
+#menu-sidebar a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#menu-sidebar a:hover{
+    color: yellow;
+    transition: 0.5s;
+}
+#menu-sidebar i:hover{
+    color: yellow;
+} */
+
+/* ******************************************** Menu Sidebar media queries **************************************** */
+
+/* @media only screen and (max-width:500px) {
+    #menu-sidebar{
+        top: 0px;
+        right: 0px;
+        padding: 35% 0;
+        opacity: 0.9;
+    }
+    #menu-sidebar li{
+        margin: 2rem;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:800px) {
+    #menu-sidebar{
+        top: 0px;
+        right: 0px;
+        padding: 20% 0;
+        opacity: 0.9;
+    }
+    #menu-sidebar li{
+        margin: 2rem;
+    }
+} */
+
+
+
+
+
+
+
+
+
+/* ******************************************** Menu Sidebar **************************************** */
+
+#menu-sidebar{
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: black;
+    height: 100vh;
+}
+#menu-sidebar i{
+    font-size: 1.5rem;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+#menu-sidebar ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+#menu-sidebar li{
+    padding: 2% 100%;
+}
+#menu-sidebar a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#menu-sidebar li:hover{
+    background-color: rgb(240, 70, 70);
+    transition: 0.5s ease-out;
+}
+#menu-sidebar i:hover{
+    color: yellow;
+}
+
+/* ******************************************** Menu Sidebar media queries **************************************** */
+
+@media only screen and (max-width:500px) {
+    #menu-sidebar li{
+        padding: 5% 100%;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:800px) {
+    #menu-sidebar li{
+        padding: 5% 100%;
+
+    }
+}
